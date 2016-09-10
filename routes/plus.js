@@ -8,7 +8,9 @@ router.get('/', function(req, res, next) {
 	if (number1 == undefined) {
 	res.sendfile("./public/html/plus.html");
 	} else {
- 	res.send(number1+number2);
+	var sum=parseInt(number1)+parseInt(number2);
+	var total = sum.toString();
+ 	res.send(total);
  	}
 });
 
